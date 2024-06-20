@@ -1,6 +1,7 @@
 package br.com.alura;
 
 public class TaxasDeConversao {
+//    câmbios que eu escolhi para manusear
     private float USD;
     private float BRL;
     private float ARS;

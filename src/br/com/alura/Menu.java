@@ -5,7 +5,7 @@ public class Menu {
 
     public int exibirMenu() {
         Scanner leitura = new Scanner(System.in);
-
+//       Instanciação de um scanner que irá ler qual a entrada do usuário para acessar determinada opção do menu
         System.out.println("\n**********************************************************");
         System.out.println("Digite o número da opção que desejar: ");
         System.out.println("\t1. Conversão Reais → Iene Japonês");
@@ -21,6 +21,7 @@ public class Menu {
 
     public float lerQuantia() {
         Scanner leitura = new Scanner(System.in);
+//        Instanciação de um scanner que faz a leitura da quantia que o usuário deseja converter
         System.out.println("Qual a quantia em reais você deseja converter?");
         return leitura.nextFloat();
     }

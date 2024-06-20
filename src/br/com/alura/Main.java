@@ -32,6 +32,7 @@ public class Main {
                 float quantiaReais = menu.lerQuantia();
                 float resultadoConversao;
 
+//                switch que verifica a opção que o usuário utilizou
                 switch (opcaoEscolhida) {
                     case 1:
                         resultadoConversao = conversor.converterParaMoeda(quantiaReais, taxasDeCambio.getConversion_rates().getJPY());
@@ -57,8 +58,11 @@ public class Main {
                         System.out.println(mensagemDefault);
                 }
             } catch (InputMismatchException e) {
+//                Caso o usuário utilizar caracteres em vez de números, será gerada a exceção 'InputMismatchException', porque o programa
+//                espera um inteiro e não uma String
                 System.out.println(mensagemDefault);
             } catch (Exception e) {
+//                Quaisquer outras exceções, o usuário cairá aqui.
                 throw new RuntimeException(e);
             }
         }
